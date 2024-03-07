@@ -1,0 +1,40 @@
+body{
+    background-image: url("../Media/Imagenes/fondojuego.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0; 
+    padding: 0;
+}
+
+#Reloj{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 65px;
+    width: 110px;
+    
+}
+
+#Reloj p{
+    margin: 0;
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+}
+
+
+
+.Lugares-Animales img{
+    width: 275px;
+    height: 250px;
+}
+
+.animal img{
+    width: 175px;
+    height: 155px;
+}
