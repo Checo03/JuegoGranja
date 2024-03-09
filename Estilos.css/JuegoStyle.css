@@ -1,10 +1,11 @@
 body{
-    background-image: url("../Media/Imagenes/fondojuego.jpg");
+    background: rgba(255, 255, 255, 0.7) url("../Media/Imagenes/fondojuego.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0; 
     padding: 0;
+    
 }
 
 #Reloj{
@@ -27,14 +28,39 @@ body{
     color: white;
 }
 
+.Container-Lugar{
+    display: flex;
+    height: 350px;
+    align-items:center;
+}
 
+.Container-Lugar div{
+   padding: 28px;
+   margin: 110px;
+}
 
-.Lugares-Animales img{
-    width: 275px;
-    height: 250px;
+.Container-Animales{
+    margin-left: 675px;
+    display: flex;
+    height: 350px;
+    align-items:end;
+    
+}
+
+.Container-Animales div{
+    margin: 45px;
+    padding: 10px;
+}
+
+.Lugar img{
+    width: 215px;
+    height: 220px;
 }
 
 .animal img{
     width: 175px;
     height: 155px;
 }
+
+
+
