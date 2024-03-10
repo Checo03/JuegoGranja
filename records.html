@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Participantes</title>
+    <link rel="stylesheet" href="Estilos.css/RecordStyle.css">
+</head>
+<body>
+    <h1>Tabla de Participantes</h1>
+    <form id="formTabla">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+        <label for="cronometro">Cronómetro:</label>
+        <input type="text" id="cronometro" required>
+        <button type="submit">Agregar Participante</button>
+    </form>
+
+    <table id="tablaParticipantes">
+        <tr>
+            <th>Nombre</th>
+            <th>Cronómetro</th>
+            <th>Puntaje</th>
+        </tr>
+    </table>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
