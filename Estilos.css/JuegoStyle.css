@@ -1,84 +1,112 @@
-body{
+body {
     background: rgba(255, 255, 255, 0.7) url("../Media/Imagenes/fondojuego.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin: 0; 
+    margin: 0;
     padding: 0;
-    
 }
 
-#Reloj{
+#Reloj {
     position: fixed;
     top: 0;
     right: 0;
     display: flex;
     align-items: center;
-    justify-content:center;
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 65px;
-    width: 110px;   
-}
-
-#Reloj p{
-    margin: 0;
-    font-size: 50px;
-    font-weight: 900;
-    color: white;
-}
-
-#Puntaje{
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content:center;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
     height: 65px;
     width: 110px;
 }
 
-#Puntaje p{
+#Reloj p {
     margin: 0;
     font-size: 50px;
     font-weight: 900;
     color: white;
 }
 
-.Container-Lugar{
+#Puntaje {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 65px;
+    width: 110px;
+}
+
+#Puntaje p {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+}
+
+.Container-Lugar {
     display: flex;
     height: 350px;
-    align-items:center;
+    align-items: center;
+    margin-top: 35px;
 }
 
-.Container-Lugar div{
-   padding: 28px;
-   margin: 110px;
+.Container-Lugar div {
+    padding: 28px;
+    margin: 110px;
 }
 
-.Container-Animales{
-    margin-left: 675px;
-    display: flex;
-    height: 350px;
-    align-items:end;
-    
-}
-
-.Container-Animales div{
-    margin: 45px;
-    padding: 10px;
-}
-
-.Lugar img{
+.Lugar img {
     width: 215px;
     height: 220px;
 }
 
-.animal img{
+.animal img {
     width: 175px;
     height: 155px;
 }
+
+.Container-Fondo{
+    display: flex;
+    padding: 30px;
+}
+
+.Container-Animales{
+    display: flex;
+    margin-left: 200px;
+}
+
+.Container-Animales div{
+    margin: 70px;
+}
+
+.Salir{
+    margin-top: 100px;
+    margin-right: 100px;
+}
+
+a {
+    font-weight: 900;
+}
+
+.prec {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.prec:hover {
+    background-color: #2980b9;
+}
+
+
 
 
 
