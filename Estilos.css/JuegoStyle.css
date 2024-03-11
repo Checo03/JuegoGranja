@@ -1,0 +1,54 @@
+
+
+
+.Container-Lugar {
+    display: flex;
+    height: 350px;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.Container-Lugar div {
+    padding: 28px;
+    margin: 110px;
+}
+
+.Lugar img {
+    width: 215px;
+    height: 220px;
+}
+
+.animal img {
+    width: 175px;
+    height: 155px;
+}
+
+.Container-Fondo{
+    display: flex;
+    padding: 30px;
+}
+
+.Container-Animales{
+    display: flex;
+    margin-left: 200px;
+}
+
+.Container-Animales div{
+    margin: 70px;
+}
+
+.Salir{
+    margin-top: 100px;
+    margin-right: 100px;
+}
+
+a {
+    font-weight: 900;
+}
+
+
+
+
+
+
+
