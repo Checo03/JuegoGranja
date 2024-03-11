@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro</title>
     <link rel="shortcut icon" href="Media/Imagenes/Favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="Estilos.css/SesionStyle.css">
 </head>
@@ -13,9 +13,10 @@
             <br> <br>
             <label for=""> ALIAS </label>
             <br> <br>
-            <input type="text">
+            <input type="text" id="nombre">
             <br> <br>
-            <button class="btn">JUGAR</button>
+            <p id="existe"></p>
+            <button class="btn" onclick="guardarDatos(0,0)">JUGAR</button>
             <br>
         </form>
         <form action="index.html">
@@ -23,5 +24,6 @@
             <button class="btn">REGRESAR</button>
         </form>
     </div>
+    <script src="js/local.js"></script>
 </body>
 </html>

@@ -9,24 +9,24 @@
 </head>
 <body>
     <div id="Reloj"> <!-- Reloj -->
-        <p>0:00</p>
+        <p id="cronometro">0:00</p>
     </div>
 
     <div id="Puntaje">
-        <p>0</p>
+        <p id="contador">0</p>
     </div>
 
     <div class="Container-Lugar">
-        <div class="Lugar" id="Lugar-1">
+        <div class="Lugar" id="animal-container-1" ondrop="drop(event)" ondragover="allowDrop(event)">
             <img src="Media/Imagenes/Lugares/CasaPerro.png" alt="">
         </div>
 
-        <div class="Lugar" id="Lugar-2">
+        <div class="Lugar" id="animal-container-2" ondrop="drop(event)" ondragover="allowDrop(event)">
             <img src="Media/Imagenes/Lugares/LugarVacas.png" alt="">
             
         </div>
 
-        <div class="Lugar" id="Lugar-3">
+        <div class="Lugar" id="animal-container-3" ondrop="drop(event)" ondragover="allowDrop(event)">
             <img src="Media/Imagenes/Lugares/LugarAbejas.png" alt="">
         </div>
 
@@ -41,22 +41,21 @@
         </div>    
 
         <div class="Container-Animales"> <!-- Corral De los aniamles -->
-            <div class="animal" id="Lugar-1">
-               <img src="Media/Imagenes/Animale/vaca.png" alt="">
+            <div class="animal" id="animal-container2-1">
+               <img src="Media/Imagenes/Animale/vaca.png" id="imagen1" draggable="true" ondragstart="drag(event)" alt="">
             </div>
             
-            <div class="animal" id="Lugar-2">
-                <img src="Media/Imagenes/Animale/perro.png" alt="">
+            <div class="animal" id="animal-container2-2">
+                <img src="Media/Imagenes/Animale/perro.png" id="imagen2" draggable="true" ondragstart="drag(event)" alt="">
             </div>
     
-            <div class="animal" id="Lugar-3">
-                <img src="Media/Imagenes/Animale/abeja.png" alt="">
+            <div class="animal" id="animal-container2-3">
+                <img src="Media/Imagenes/Animale/abeja.png" id="imagen3" draggable="true" ondragstart="drag(event)" alt="">
             </div>
         </div>
      
     </div>
 
-        
+    <script src="js/script.js"></script>    
 </body>
 </html>
-    
