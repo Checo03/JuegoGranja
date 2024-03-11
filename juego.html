@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Estilos.css/JuegoStyle.css">
+    
     <link rel="stylesheet" href="Estilos.css/estilosFuncionamiento.css">
     <link rel="shortcut icon" href="Media/Imagenes/Favicon.png" type="image/x-icon">
 </head>
@@ -18,56 +18,74 @@
     </div>
 
     <div class="contenedorJuego">
-        <div class="fila">
+        <div class="fila container-lugares">
           <div class="canvas-container">
-            <canvas id="zona1" class="canvas"></canvas>
+            <canvas id="zona1" class="canvas Canvasimg"></canvas>
             <div class="nombre-imagen" id="nombreImagen1"></div>
           </div>
           <div class="canvas-container">
-            <canvas id="zona2" class="canvas"></canvas>
+            <canvas id="zona2" class="canvas Canvasimg"></canvas>
             <div class="nombre-imagen" id="nombreImagen2"></div>
           </div>
           <div class="canvas-container">
-            <canvas id="zona3" class="canvas"></canvas>
+            <canvas id="zona3" class="canvas Canvasimg"></canvas>
             <div class="nombre-imagen" id="nombreImagen3"></div>
           </div>
           <div class="canvas-container">
-            <canvas id="zona4" class="canvas"></canvas>
+            <canvas id="zona4" class="canvas Canvasimg"></canvas>
             <div class="nombre-imagen" id="nombreImagen4"></div>
           </div>
           <div class="canvas-container">
-            <canvas id="zona5" class="canvas"></canvas>
+            <canvas id="zona5" class="canvas Canvasimg"></canvas>
             <div class="nombre-imagen" id="nombreImagen5"></div>
           </div>
           <div class="canvas-container">
-            <canvas id="zona6" class="canvas"></canvas>
+            <canvas id="zona6" class="canvas Canvasimg"></canvas>
             <div class="nombre-imagen" id="nombreImagen6"></div>
           </div>
           <div class="canvas-container">
-            <canvas id="zona7" class="canvas"></canvas>
+            <canvas id="zona7" class="canvas Canvasimg"></canvas>
             <div class="nombre-imagen" id="nombreImagen7"></div>
           </div>
           <div class="canvas-container">
-            <canvas id="zona8" class="canvas"></canvas>
+            <canvas id="zona8" class="canvas Canvasimg"></canvas>
             <div class="nombre-imagen" id="nombreImagen8"></div>
           </div>
           <div class="canvas-container">
-            <canvas id="zona9" class="canvas"></canvas>
+            <canvas id="zona9" class="canvas Canvasimg"></canvas>
             <div class="nombre-imagen" id="nombreImagen9"></div>
           </div>
         </div>
-        <div class="fila">
-          <img id="imagen1" src="Media/Imagenes/Animale/imagen1.png" class="imagen">
-          <img id="imagen2" src="Media/Imagenes/Animale/imagen2.png" class="imagen">
-          <img id="imagen3" src="Media/Imagenes/Animale/imagen3.png" class="imagen">
-          <img id="imagen4" src="Media/Imagenes/Animale/imagen4.png" class="imagen">
-          <img id="imagen5" src="Media/Imagenes/Animale/imagen5.png" class="imagen">
-          <img id="imagen6" src="Media/Imagenes/Animale/imagen6.png" class="imagen">
-          <img id="imagen7" src="Media/Imagenes/Animale/imagen7.png" class="imagen">
-          <img id="imagen8" src="Media/Imagenes/Animale/imagen8.png" class="imagen">
-          <img id="imagen9" src="Media/Imagenes/Animale/imagen9.png" class="imagen">
+
+        <div class="fila fondo">
+          <div class="Container-btn">
+            <form action="index.html">
+              <button class="prec Regresar">Regresar</button>
+            </form>
+
+            <button class="prec" id="botonSiguiente" onclick="verificarImagenes()" disabled>Siguiente</button>
+
+          </div>
+
+          <div class="conatiner-animales">
+            <img id="imagen1" src="Media/Imagenes/Animale/imagen1.png" class="imagen">
+            <img id="imagen2" src="Media/Imagenes/Animale/imagen2.png" class="imagen">
+            <img id="imagen3" src="Media/Imagenes/Animale/imagen3.png" class="imagen">
+            <img id="imagen4" src="Media/Imagenes/Animale/imagen4.png" class="imagen">
+            <img id="imagen5" src="Media/Imagenes/Animale/imagen5.png" class="imagen">
+            <img id="imagen6" src="Media/Imagenes/Animale/imagen6.png" class="imagen">
+            <img id="imagen7" src="Media/Imagenes/Animale/imagen7.png" class="imagen">
+            <img id="imagen8" src="Media/Imagenes/Animale/imagen8.png" class="imagen">
+            <img id="imagen9" src="Media/Imagenes/Animale/imagen9.png" class="imagen">
+          </div>
+
+          
+          
         </div>
+
       </div>
+
+
         <audio id="sonido1" src="Media/Audio/SonidosAnimales/SonidoAbeja.mp3"></audio>
         <audio id="sonido2" src="Media/Audio/SonidosAnimales/SonidoCaballo.wav"></audio>
         <audio id="sonido3" src="Media/Audio/SonidosAnimales/SonidoCerdo.wav"></audio>
@@ -79,8 +97,11 @@
         <audio id="sonido9" src="Media/Audio/SonidosAnimales/SonidoVaca.ogg"></audio>
         <audio id="sonidoError" src="Media/Audio/RespuestaIncorrecta.mp3"></audio>
 
+      <div class="botones">
+        
+      </div>
       
-      <button class="prec" id="botonSiguiente" onclick="verificarImagenes()" disabled>Siguiente</button>
+      
 
     <script src="js/script.js"></script>
     <script src="js/funcionamientoA.js"></script>   
