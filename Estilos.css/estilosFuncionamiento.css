@@ -1,13 +1,70 @@
+body {
+  background: rgba(255, 255, 255, 0.7) url("../Media/Imagenes/fondojuego.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+
 .contenedorJuego {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-  }
+}
+
+  #Reloj {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 65px;
+    width: 110px;
+}
+
+#Reloj p {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+}
+
+#Puntaje {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 65px;
+    width: 110px;
+}
+
+#Puntaje p {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+}
+
 
   .fila {
+    margin-top: 75px;
     display: flex;
-    gap: 20px;
+  }
+
+  .container-lugares{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
   }
 
   .canvas-container {
@@ -18,9 +75,9 @@
   .canvas {
     width: 250px;
     height: 200px;
-    border: 2px solid black;
+    border: none;
     border-radius: 10px;
-    background-color: #f0f0f0;
+    
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
@@ -30,36 +87,104 @@
     margin: 10px;
   }
 
+
   .nombre-imagen {
     font-family: Arial, sans-serif;
-    font-size: 17px;
+    font-size:xx-large;
     margin-top: 5px; 
-    color: darkblue; 
+    color: white;
+    font-weight: 700; 
+
+    background: rgba(0, 0, 0, 0.5);;
   }
+
   #zona1 {
     background-image: url('../Media/Imagenes/Lugares/fondo1.png');
+    background-repeat: no-repeat !important;
   }
+
   #zona2 {
     background-image: url('../Media/Imagenes/Lugares/fondo2.png');
+    background-repeat: no-repeat !important;
   }
+    
   #zona3 {
     background-image: url('../Media/Imagenes/Lugares/fondo3.png');
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
   }
   #zona4 {
     background-image: url('..//Media/Imagenes/Lugares/fondo4.png');
+    background-repeat: no-repeat !important;
   }
   #zona5 {
     background-image: url('../Media/Imagenes/Lugares/fondo5.png');
+    background-repeat: no-repeat !important;
   }
   #zona6 {
     background-image: url('../Media/Imagenes/Lugares/fondo6.png');
+    background-repeat: no-repeat !important;
   }
   #zona7 {
     background-image: url('../Media/Imagenes/Lugares/fondo7.png');
+    background-repeat: no-repeat !important;
   }
   #zona8 {
     background-image: url('../Media/Imagenes/Lugares/fondo8.png');
+    background-repeat: no-repeat !important;
   }
   #zona9 {
     background-image: url('../Media/Imagenes/Lugares/fondo9.png');
+    background-repeat: no-repeat !important;
   }
+
+  .CanvasImg{
+    width: 250px;
+    height: 200px;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  .prec {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+
+    width: 150px;
+    height: 40px;
+}
+
+.prec:hover {
+    background-color: #2980b9;
+}
+
+.Regresar{
+  background-color: #f44336;;
+}
+
+
+.Container-btn{
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+.conatiner-animales{
+  display: flex;
+  gap: 100px;
+}
+
+.fondo{
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  gap: 250px;
+}
