@@ -1,0 +1,65 @@
+.contenedorJuego {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .fila {
+    display: flex;
+    gap: 20px;
+  }
+
+  .canvas-container {
+    margin: 10px;
+    text-align: center;
+  }
+
+  .canvas {
+    width: 250px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .imagen {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+
+  .nombre-imagen {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    margin-top: 5px; 
+    color: darkblue; 
+  }
+  #zona1 {
+    background-image: url('../Media/Imagenes/Lugares/fondo1.png');
+  }
+  #zona2 {
+    background-image: url('../Media/Imagenes/Lugares/fondo2.png');
+  }
+  #zona3 {
+    background-image: url('../Media/Imagenes/Lugares/fondo3.png');
+  }
+  #zona4 {
+    background-image: url('..//Media/Imagenes/Lugares/fondo4.png');
+  }
+  #zona5 {
+    background-image: url('../Media/Imagenes/Lugares/fondo5.png');
+  }
+  #zona6 {
+    background-image: url('../Media/Imagenes/Lugares/fondo6.png');
+  }
+  #zona7 {
+    background-image: url('../Media/Imagenes/Lugares/fondo7.png');
+  }
+  #zona8 {
+    background-image: url('../Media/Imagenes/Lugares/fondo8.png');
+  }
+  #zona9 {
+    background-image: url('../Media/Imagenes/Lugares/fondo9.png');
+  }
