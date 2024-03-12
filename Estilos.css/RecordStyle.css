@@ -9,6 +9,55 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.titulo {
+    text-align: center;
+    color: white;
+}
+
+.titulo h1 {
+    font-weight: 1100;
+    font-size: 43px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px; 
+    display: inline-block;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.btn {
+    top: 5px;
+    left: 0;
+
+    background-color: #008CBA;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+    transition: 200ms;
+    width: 150px;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .btn:not(:disabled):hover,
+  .btn:not(:disabled):focus {
+    outline: 0;
+    background: #008CBA;
+    box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+  }
+  
+  .btn:disabled {
+    filter: saturate(0.2) opacity(0.5);
+    -webkit-filter: saturate(0.2) opacity(0.5);
+    cursor: not-allowed;
+  }
+
 .container {
     width: 80%;
     margin: 50px auto;
@@ -25,7 +74,7 @@ table {
 
 th, td {
     padding: 10px;
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid #ddd;
 }
 
