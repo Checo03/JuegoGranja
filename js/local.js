@@ -1,6 +1,8 @@
 var jugadores=localStorage.getItem("jugadores");
+let puntos = 0;
 jugadores=JSON.parse(jugadores);
 if(jugadores==null) jugadores=[];
+localStorage.setItem("puntosJ",puntos);
 
 function lista(){
     var aLength = jugadores.length;
@@ -26,6 +28,7 @@ function guardarDatos(contP, mejorT){
         var jugador = JSON.parse(jugadores[i]);
         if(jugador.nombre === nombre){
             alert("El nombre del jugador ya existe. Contador de puntos: "+jugador.contP+"  Mejor Tiempo: "+jugador.mejorT);
+            localStorage.setItem("jugadorEN",JSON.stringify(jugador));
             return;
         }
     }
@@ -39,6 +42,7 @@ function guardarDatos(contP, mejorT){
         document.getElementById("nombre").innerHTML=" ";
         jugadores.push(nuevo);
         localStorage.setItem("jugadores",JSON.stringify(jugadores));
+        localStorage.setItem("jugadorEN",JSON.stringify(nuevo));
     }
     
 }

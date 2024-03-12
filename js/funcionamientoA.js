@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
       } else {
-        alert('Animal en cas equivocada');
+        // alert('Animal en cas equivocada');
         const sonidoError = document.getElementById('sonidoError');
         sonidoError.play();
         puntos--;
